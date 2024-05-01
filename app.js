@@ -5,7 +5,6 @@ const resultPar = document.getElementById('resultPar')
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    // console.log(dateInput.value);
 
     const now = new Date();
     const birthDate = new Date(dateInput.value + " 00:00");
@@ -19,5 +18,4 @@ form.addEventListener("submit", (event) => {
     resultPar.style.display = 'block';
     result.style.display = 'block'
     result.innerHTML = `You Are ${Math.floor(ageInYears)} Years old`;
-
 })
